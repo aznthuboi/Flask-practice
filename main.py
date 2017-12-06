@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Flask App!"
+    return current_app.send_static_file('layout.html')"
 
 
 # @app.route("/hello/<string:name>")
